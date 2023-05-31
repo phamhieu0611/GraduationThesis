@@ -1,6 +1,15 @@
 # GraduationThesis.
 # Made by Phạm Trung Hiếu in 2023 
-Using Node-Js for backend.
-Used JWT for login.
-Using React-Js for frontend.
-Using trufle & Ganache for payment by Blockchain (etherum network). 
+
+[//]: # (addons)
+
+Available addons
+----------------
+Tech Using | summary
+--- | ---
+[Node Js](project/Project-Nodejs-2/server/) | Created web api, Server side
+[React-Js](project/Project-Nodejs-2/web-ban-hang/) | Created template, View side
+[Trufle & Ganache](web_dialog_size/) | Quickly fire up a personal Ethereum blockchain which you can use to run tests, execute commands, and inspect state while controlling how the chain operates.
+
+
+[//]: # (end addons)
