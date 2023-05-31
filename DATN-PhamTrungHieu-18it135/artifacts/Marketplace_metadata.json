@@ -1,0 +1,274 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_userId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_orderPrice",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_step",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "OrderChainStep",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "token",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address payable",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "ProductCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "token",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address payable",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "ProductPurchased",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_userId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_orderPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_ownerAddress",
+						"type": "address"
+					}
+				],
+				"name": "createOrder",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_token",
+						"type": "string"
+					}
+				],
+				"name": "createProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "order",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_userId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_orderPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Marketplace.SupplyChainState",
+						"name": "_state",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "products",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "token",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"project\\Project-Nodejs-2\\truffle\\contracts\\Marketplace.sol": "Marketplace"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"project\\Project-Nodejs-2\\truffle\\contracts\\Marketplace.sol": {
+			"keccak256": "0x1798020ed4749dd438af6ef39a2fb19531522b49474eca77bd472de60736724f",
+			"urls": [
+				"bzz-raw://39ba5e8b8085660ab03fd67bcacb9746e1e8a5c9bd5772d5738dc51061b920ee",
+				"dweb:/ipfs/QmRA8EuNNAby8r7FYxtAC4595psRuaRurnumSaDKrHN1n3"
+			]
+		}
+	},
+	"version": 1
+}

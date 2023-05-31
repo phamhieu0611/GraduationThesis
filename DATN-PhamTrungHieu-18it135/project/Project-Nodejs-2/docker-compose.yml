@@ -1,0 +1,59 @@
+version: "3"
+services:
+  frontend:
+    container_name: web-ban-hang
+    image: airnang/webbanhang:v2
+    build:
+      context: ./web-ban-hang
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - "1901:3003"
+    restart: always
+    networks:
+      - goals-net
+    volumes:
+      - ./web-ban-hang:/app
+      - /app/node_modules
+    depends_on:
+      - server
+
+  server:
+    container_name: server
+    image: airnang/server:v1
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - "8800:8800"
+    restart: always
+    networks:
+      - goals-net
+    volumes:
+      - ./server:/server
+      - /server/node_modules
+
+  truffle:
+    build:
+      context: ./truffle
+      target: truffle
+    depends_on:
+      - ganache
+    networks:
+      - goals-net
+    volumes:
+      - .:/home/app
+      - /home/app/node_modules
+
+  ganache:
+    build:
+      context: ./truffle
+      target: ganache
+    ports:
+      - 8545:8545
+    networks:
+      - goals-net
+
+
+networks:
+  goals-net:
+    external: true
