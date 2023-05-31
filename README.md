@@ -7,9 +7,9 @@ Available addons
 ----------------
 Tech Using | summary
 --- | ---
-[Node Js](project/Project-Nodejs-2/server/) | Created web api, Server side
-[React-Js](project/Project-Nodejs-2/web-ban-hang/) | Created template, View side
-[Trufle & Ganache](web_dialog_size/) | Quickly fire up a personal Ethereum blockchain which you can use to run tests, execute commands, and inspect state while controlling how the chain operates.
+[Node Js](DATN-PhamTrungHieu-18it135/project/Project-Nodejs-2/server/) | Created web api, Server side
+[React-Js](DATN-PhamTrungHieu-18it135/project/Project-Nodejs-2/web-ban-hang/) | Created template, View side
+[Trufle & Ganache](DATN-PhamTrungHieu-18it135/project/Project-Nodejs-2/truffle/) | Quickly fire up a personal Ethereum blockchain which you can use to run tests, execute commands, and inspect state while controlling how the chain operates.
 
 
 [//]: # (end addons)
